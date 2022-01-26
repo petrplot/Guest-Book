@@ -66,6 +66,9 @@ const AllGuestsListPage = () => {
       }
       </div>
       <div className='guests__filter'>
+        {/* здесь передаем в props массив из локального 
+        хранилища и функцию для изменения состояния 
+        */}
         <Filter guestStor={guestStor} changeGuests={changeGuests} />
       </div>
       
