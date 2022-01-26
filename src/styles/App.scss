@@ -1,0 +1,237 @@
+@import './nullstyle.scss';//подключаем стили обнуления
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.nav{
+    padding: 30px;
+    font-size: 20px;
+    background: blue;
+    .link{
+        margin: 0 20px;
+        color: white;
+    }
+    .link:hover{
+        text-decoration: underline;
+    }
+    .link:active{
+        color: orangered;
+    }
+}
+
+.guests{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px ;
+    &__content{
+        flex: 0 1 50%;
+    }
+    &__card{
+        padding: 20px;
+        margin: 30px;
+        background: rgb(228, 222, 222);
+        border-radius: 10px;
+        h2{
+            font-size: 32px; 
+            margin-bottom: 20px;
+            .link{
+                color: blue;
+            }:active{color:red;}
+        }
+        h2:hover{text-decoration: underline;}
+        p{font-size: 20px;}
+        button{
+            margin-top: 20px;
+            background: orangered;
+            border-radius:5px;
+            padding: 10px 20px;
+            color: white;
+            font-size: 18px;
+        }  
+    }
+    &__filter{
+        flex: 0 1 50%;
+    }
+    &__count{
+        padding: 30px;
+        flex: 0 0 95.5%;
+        margin: 30px;
+        background: rgb(228, 222, 222);
+        border-radius: 10px;
+        p{font-size: 24px;}
+    }
+}
+
+.created{
+    background: rgb(228, 222, 222);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px ;
+    max-width: 60%;
+    &__form{
+        display: flex;
+        flex-direction: column;
+        input{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        select{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        button{
+            width: 120px;
+            margin-top: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            padding:10px 20px;
+            background: orangered;
+            color: white;
+        }
+    }
+    h2{
+        font-size: 32px;
+        color: blue;
+        margin-bottom: 20px;
+    }
+    p{font-size: 24px; margin-top: 20px;}
+}
+
+.guest{
+    display: flex;
+    &__info{
+        flex: 0 1 50%;
+        background: rgb(228, 222, 222);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        p{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+    &__update{
+        background: rgb(228, 222, 222);
+        flex: 0 1 50%;
+        border-radius: 10px;
+        margin: 20px;
+    }
+}
+
+.filter{
+    &__table{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 30px;
+        background: rgb(228, 222, 222);
+        border-radius: 10px;
+        P{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        input{
+            font-size: 20px;
+        }
+        button{
+            width: 120px;
+            margin-top: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            padding:10px 20px;
+            background: orangered;
+            color: white;
+        }
+    }
+    &__age{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 30px;
+        background: rgb(228, 222, 222);
+        border-radius: 10px;
+        P{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        input{
+            font-size: 20px;
+        }
+        button{
+            width: 120px;
+            margin-top: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            padding:10px 20px;
+            background: orangered;
+            color: white;
+        }
+    }
+    &__drink{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 30px;
+        background: rgb(228, 222, 222);
+        border-radius: 10px;
+        P{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        select{
+            font-size: 20px;
+        }
+        button{
+            width: 120px;
+            margin-top: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            padding:10px 20px;
+            background: orangered;
+            color: white;
+        }
+    }
+    &__getAllBtn{
+        padding: 20px;
+        margin: 30px;
+        background: rgb(228, 222, 222);
+        border-radius: 10px;
+        button{
+            width: 220px;
+            font-size: 18px;
+            border-radius: 5px;
+            padding:10px 20px;
+            background: orangered;
+            color: white;
+        }
+    }
+}
+
+.update{
+    &__form{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        input{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        select{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        button{
+            width: 120px;
+            margin-top: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            padding:10px 20px;
+            background: orangered;
+            color: white;
+        }
+    }
+}
